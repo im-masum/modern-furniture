@@ -61,16 +61,18 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-color: 2px solid red;
+
 }
 .hero-title {
     font-size: 3rem;
     margin-bottom: 20px;
+    color: rgb(255, 213, 0);
 }
 
 .hero-description {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 30px;
+    color: #fffffd;
 }
 
  .btn { 
