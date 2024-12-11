@@ -39,7 +39,8 @@ a:hover {
     font-size: 1.5rem;
     color: #f1c40f;
 }
-.logo span{
+
+.logo span {
     color: red;
 }
 
@@ -63,12 +64,13 @@ a:hover {
     background-position: center;
 
 }
+
 .hero-title {
     font-size: 3rem;
     margin-bottom: 20px;
     color: #ffffff;
     text-shadow: 10px 10px 20px;
-    
+
 }
 
 .hero-description {
@@ -77,7 +79,7 @@ a:hover {
     color: #fffffd;
 }
 
- .btn { 
+.btn {
     width: 200px;
     padding: 10px;
     background-color: #f1c40f;
@@ -88,7 +90,7 @@ a:hover {
     text-decoration: none;
     margin: 0 auto;
 
- }
+}
 
 .btn:hover {
     background-color: #352b05;
@@ -119,7 +121,7 @@ a:hover {
 
 .feature-card {
     background-color: #1e1e1e;
-    padding:20px;
+    padding: 20px;
     border-radius: 8px;
     width: 32%;
     text-align: center;
@@ -167,7 +169,7 @@ a:hover {
 
 /* Footer */
 .footer {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     background-color: #1e1e1e;
     text-align: center;
@@ -177,4 +179,61 @@ a:hover {
 
 .footer a {
     color: #f1c40f;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        
+    }
+
+    .hero {
+        height: auto;
+        padding: 20px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .features-container, .products-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-card, .product-card {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-description {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .icon {
+        font-size: 1.5rem;
+    }
 }
