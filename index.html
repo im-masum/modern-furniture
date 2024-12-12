@@ -4,21 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furniture Shop</title>
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Modern Furniture Shop</title>
     <link rel="stylesheet" href="style.css">
     <base href="images/">
 </head>
 
 <body>
-    <header class="header">
-            <h1 class="logo">Furniture <span>Com.</span></h1>
-            <nav class="nav">
-                <a href="#features">Features</a>
-                <a href="#products">Products</a>
-                <a href="#about">About Us</a>
-                <a href="#contact">Contact</a>
-            </nav>
-    </header>
+    <section class="header">
+        <nav>
+            <div class="logo"><img src="furniture-logo.jpg" alt=""> </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="hamburger">
+                <i class="fa-solid fa-bars"></i></label>
+            <ul>
+                <li><a class="active" href="#"> Home</a></li>
+                <li><a href="#"> Product</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#"> Feedback</a></li>
+                <li><a href="#">Info</a></li>
+            </ul>
+        </nav>
+    </section>
 
     <section class="hero">
             <h1 class="hero-title">Elegant Furniture for Every Space</h1>

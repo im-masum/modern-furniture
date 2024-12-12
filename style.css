@@ -17,36 +17,67 @@ body {
 
 /* Header */
 .header {
-    display: inline-flex;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    background-color: #1e1e1e;
+}
+
+.logo img {
+    width: 200px;
+    height: 130px;
+    border-radius: 10px;
+
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 140px;
     align-items: center;
     justify-content: space-between;
     background-color: #1e1e1e;
-    width: 100%;
-    margin: 0px;
-    padding: 20px 20px;
+    padding: 0px 50px 0px 50px;
+    border-radius: 10px;
+
 }
 
-a {
-    color: #f1c40f;
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    font-size: 24px;
+    text-shadow: 15px 15px 30px;
+    transition: all 0.3s ease;
+
+
+}
+
+#click {
+    display: none;
+}
+
+nav ul li a {
+    color:#ffffff;
     text-decoration: none;
+    font-size: 32px;
+    margin: 5px;
+    border-radius: 8px;
+    padding: 8px 20px;
+}
+.hamburger {
+    display: none;
+
 }
 
-a:hover {
-    text-decoration: underline;
-}
+nav ul li a:hover,
+nav ul li a.active {
+    color: black;
+    background: rgb(182, 167, 53);
 
-.logo {
-    font-size: 1.5rem;
-    color: #f1c40f;
-}
 
-.logo span {
-    color: red;
-}
-
-.nav a {
-    margin: 0 30px;
-    font-size: 1rem;
 }
 
 /* Hero Section */
@@ -183,9 +214,61 @@ a:hover {
 
 /* Media Queries */
 @media (max-width: 768px) {
-    .nav {
-        display: none;
-        
+
+    #click:checked~.hamburger i::before {
+        content: "\f00d";
+    }
+    
+    nav {
+        width: 100%;
+        margin: 0px;
+    }
+
+    nav ul {
+        display: block;
+        position: fixed;
+        top: 145px;
+        left: -100%;
+        width: 100%;
+        align-items: center;
+        transform: all 0.3s ease;
+        background-color: #544713;
+        border-radius: 5px;
+
+    }
+
+    #click:checked~ul {
+        left: 0%;
+    }
+
+    nav ul li {
+        margin: 40px 0px;
+    }
+
+    nav ul li a {
+        font-size: 24px;
+        width: 95%;
+        display: block;
+        margin-left: 20px;
+        padding: 10px;
+        transition: .5s;
+
+    }
+    nav ul li a i{
+        display: block;
+    }
+    nav ul li a:hover,
+    nav ul li a.active {
+        color: rgb(21, 21, 21);
+        background: white;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 50px;
+        padding: 20px 20px;
+        cursor: pointer;
+        color: #f1c40f;
     }
 
     .hero {
