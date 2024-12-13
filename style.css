@@ -270,8 +270,8 @@ nav ul li a.active {
     nav ul li a {
         display: block;
         width: 100%;
-        padding: 15px;
-        font-size: 24px;
+        padding: 10px;
+        font-size: 20px;
         align-items: center;
         transition: .5s;
         margin: 0px;
