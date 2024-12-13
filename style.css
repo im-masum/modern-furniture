@@ -237,9 +237,14 @@ nav ul li a.active {
         top: 20px;
 
     }
+    .logo{
+        position: relative;
+        top: 20px;
+    }
     .logo img{
-        width: 500px;
+        width: 400px;
         height: 200px;
+        padding: 20px;
     }
     nav ul {
         display: flex;
