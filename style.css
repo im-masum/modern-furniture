@@ -252,7 +252,7 @@ nav ul li a.active {
         display: flex;
         flex-direction: column;
         position: fixed;
-        top: 320px;
+        top: 290px;
         left: -100%;
         width: 100%;
         text-align: center;
