@@ -216,7 +216,7 @@ nav ul li a.active {
 }
 
 /* Media Queries */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
     #click:checked~.hamburger i::before {
         content: "\f00d";
@@ -330,7 +330,7 @@ nav ul li a.active {
     }
 }
 
-@media  (max-width: 992px) and (min-width:767px) {
+@media  (max-width: 400px) {
     .hero-title {
         font-size: 1.8rem;
     }
