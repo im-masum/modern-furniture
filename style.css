@@ -330,7 +330,7 @@ nav ul li a.active {
     }
 }
 
-@media (max-width: 480px) {
+@media  (max-width: 992px) and (min-width:767px) {
     .hero-title {
         font-size: 1.8rem;
     }
