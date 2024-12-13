@@ -236,8 +236,8 @@ nav ul li a.active {
         margin-bottom: 10px;
     }
     .logo img{
-        width: 600px;
-        height: 250px;
+        width: 500px;
+        height: 200px;
     }
     nav ul {
         display: flex;
