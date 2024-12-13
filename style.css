@@ -297,6 +297,7 @@ nav ul li a.active {
     }
 
     .hero {
+        margin-top: 10px;
         height: auto;
         padding: 20px;
     }
