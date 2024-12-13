@@ -239,10 +239,12 @@ nav ul li a.active {
     }
     .logo{
         position: relative;
+        width: 100%;
         top: 20px;
+        padding: 20px;
     }
     .logo img{
-        width: 400px;
+        width: 100%;
         height: 200px;
         padding: 20px;
     }
