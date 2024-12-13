@@ -302,7 +302,7 @@ nav ul li a.active {
         height: auto;
         padding: 20px;
     }
-
+    
     .hero-title {
         font-size: 2rem;
     }
@@ -312,6 +312,7 @@ nav ul li a.active {
     }
 
     .features-container, .products-container {
+        display: flex;
         flex-direction: column;
         align-items: center;
         gap: 20px;
@@ -321,7 +322,6 @@ nav ul li a.active {
         display: flex;
         flex-direction: column;
         width: 100%;
-        /* gap: 20px; */
     }
 
     .footer {
